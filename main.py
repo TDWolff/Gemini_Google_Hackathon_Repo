@@ -18,13 +18,6 @@ from elevenlabs import Voice, VoiceSettings, play
 from elevenlabs.client import ElevenLabs
 import random
 
-def init():
-    os.environ['WEATHER_API_KEY'] = "d1c594384139765178ecd5e4b16c386f"
-    os.environ['GOOGLE_API_KEY'] = "AIzaSyCFODvWkHZpp121vjueEFsbOMv9-s4YYAc"
-    os.environ['ELEVEN_TOKEN'] = 'aae657101a1f1cfa4cf53e2d78ca8338'
-
-init()
-
 
 def weather(text):
     if text:
@@ -227,3 +220,8 @@ while True:
         speak("Goodbye")
         print("Model: Goodbye friend!")
         break
+
+    ## ALL COMMANDS:
+    # take a picture (uses your camera to detect objects)
+    # whats the weather in (replace with your city or state)
+    # exit (breaks the loop)
